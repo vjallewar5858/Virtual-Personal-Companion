@@ -22,7 +22,7 @@
 ## 📂 Project Structure
 
 ```
-email-event-reminder/
+Virtual Personal Companion/
 │
 ├── app.py                      # Main Streamlit application
 ├── requirements.txt            # Python dependencies
@@ -49,30 +49,6 @@ email-event-reminder/
 ```
 
 ---
-
-## 🚀 Quick Start
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/email-event-reminder.git
-cd email-event-reminder
-```
-
-### 2. Create a virtual environment & install dependencies
-
-```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. Configure environment variables
-
-```bash
-cp .env.example .env
-# Fill in your Twilio credentials in .env
-```
 
 ### 4. Set up Google Calendar API
 
