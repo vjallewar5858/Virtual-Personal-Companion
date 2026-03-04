@@ -1,4 +1,4 @@
-# 📅 Email Event Reminder
+# 📅 Virtual Personal Companion
 
 > An intelligent web application that automatically scans your Gmail inbox, detects event details, sends reminders via **Email & SMS**, and syncs events to **Google Calendar** — built with Python, Streamlit, Twilio & Google APIs.
 
