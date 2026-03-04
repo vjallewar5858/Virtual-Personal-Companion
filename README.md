@@ -2,11 +2,6 @@
 
 > An intelligent web application that automatically scans your Gmail inbox, detects event details, sends reminders via **Email & SMS**, and syncs events to **Google Calendar** — built with Python, Streamlit, Twilio & Google APIs.
 
-![CI](https://github.com/YOUR_USERNAME/email-event-reminder/actions/workflows/ci.yml/badge.svg)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-ff4b4b)
-![License](https://img.shields.io/badge/license-MIT-green)
-
 ---
 
 ## 🎯 Features
