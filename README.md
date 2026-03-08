@@ -1,25 +1,25 @@
-# 📅 Virtual Personal Companion
+# Virtual Personal Companion
 
 > An intelligent web application that automatically scans your Gmail inbox, detects event details, sends reminders via **Email & SMS**, and syncs events to **Google Calendar** — built with Python, Streamlit, Twilio & Google APIs.
 
 ---
 
-## 🎯 Features
+## Features
 
 | Feature | Description |
 |---|---|
-| 📧 **Gmail IMAP Scanning** | Connects securely to your inbox and scans all emails |
-| 🔍 **Smart Event Detection** | Extracts event date & location using regex pattern matching |
-| 📬 **Email Reminders** | Sends a rich HTML reminder email with travel booking links |
-| 📱 **SMS Notifications** | Sends instant SMS alerts via Twilio |
-| 🗓 **Google Calendar Sync** | Auto-creates calendar events with reminders |
-| ⏰ **Configurable Timing** | Choose how many days before to send reminders (1–7) |
-| 🌐 **Travel Link Integration** | RedBus, IRCTC, MakeMyTrip & Goibibo links in every reminder |
-| 🖥️ **Web Interface** | Clean Streamlit UI — no terminal knowledge needed |
+| **Gmail IMAP Scanning** | Connects securely to your inbox and scans all emails |
+| **Smart Event Detection** | Extracts event date & location using regex pattern matching |
+| **Email Reminders** | Sends a rich HTML reminder email with travel booking links |
+| **SMS Notifications** | Sends instant SMS alerts via Twilio |
+| **Google Calendar Sync** | Auto-creates calendar events with reminders |
+| **Configurable Timing** | Choose how many days before to send reminders (1–7) |
+| **Travel Link Integration** | RedBus, IRCTC, MakeMyTrip & Goibibo links in every reminder |
+| **Web Interface** | Clean Streamlit UI — no terminal knowledge needed |
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Virtual Personal Companion/
@@ -50,73 +50,8 @@ Virtual Personal Companion/
 
 ---
 
-### 4. Set up Google Calendar API
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a project → Enable **Google Calendar API**
-3. Create **OAuth 2.0 Client ID** credentials (Desktop app)
-4. Download the `client_secret.json` file
-5. Place it in the project root *(it is git-ignored)*
-
-### 5. Generate a Gmail App Password
-
-1. Google Account → **Security** → **2-Step Verification** → **App Passwords**
-2. Generate a password for "Mail"
-3. Use this 16-character password in the app
-
-### 6. Run the app
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 📧 Email Format
-
-For the app to detect an event, your email body must contain:
-
-```
-Date: DD/MM/YYYY
-Location: <venue name>
-```
-
-**Example email body:**
-```
-Hi,
-
-You are invited to the Annual Tech Fest.
-
-Date: 15/03/2025
-Location: VJTI Auditorium, Mumbai
-
-Please confirm your attendance.
-```
-
----
-
-## 🔧 Configuration
-
-| Variable | Description |
-|---|---|
-| `TWILIO_ACCOUNT_SID` | Your Twilio Account SID |
-| `TWILIO_AUTH_TOKEN` | Your Twilio Auth Token |
-| `TWILIO_PHONE_NUMBER` | Your Twilio phone number (e.g. `+19382016372`) |
-| `GOOGLE_CLIENT_SECRET_PATH` | Path to your Google OAuth2 JSON |
-| `DEFAULT_TIMEZONE` | Timezone for calendar events (default: `Asia/Kolkata`) |
-| `REMINDER_DAYS_BEFORE` | Days before event to send reminder (default: `2`) |
-
----
-
-## 🧪 Running Tests
-
-```bash
-pytest tests/ -v
-```
-
----
-
-## 🏗 Architecture
+## Architecture
 
 ```
 Gmail Inbox
@@ -140,19 +75,13 @@ Twilio SMS
 
 ---
 
-## 👥 Team
-
-This project was built as a Final Year B.E. Project.
-
----
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Streamlit](https://streamlit.io/) for the web framework
 - [Twilio](https://www.twilio.com/) for SMS API
